@@ -2,6 +2,40 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+.bg-lightgray {
+    background-color: #f3f5f9;
+}
+.gray-text {
+    color: #6f7b97;
+    font-weight: 600;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: #2e85ff;
+    font-weight: bolder;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+h3 {
+    font-weight: 600;
+}
+/* Media query rules for mobile*/
+@media all and (max-width: 767px) {
+    .custom-imgs li {
+        width: calc(100% / 2 - 20px);
+    }
+    .custom-imgs li img {
+        max-width: 190px;
+        min-width: 70px;
+    }
+    .deploy .list-process {
+        margin-bottom: 40px;
+    }
+}
 
 
 /* HEADER */
@@ -21,8 +55,9 @@ body {
     padding: 0;
 }
 .wrapper a {
-    margin-left: 8px;
+    margin-left: 6px;
     font-size: 12px;
+    font-weight: bolder;
     color: black;
 }
 .menu a:hover {
@@ -50,6 +85,7 @@ body {
     background-image: url("../img/ms-jumbo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 /* Title left */
 .title_jumbo {
@@ -70,7 +106,6 @@ body {
     border-radius: 5px;
 }
 .white-container h2 {
-    font-weight: 600;
     line-height: 1.3;
 }
 .white-container span {
@@ -104,3 +139,50 @@ button img {
 }
 
 /* Customers imgs */
+header .bg-lightgray {
+    padding: 25px 0;
+}
+.custom-imgs ul {
+    padding: 0;
+}
+.custom-imgs li {
+    display: inline-block;
+    width: calc(100% / 6 - 20px);
+    margin-right: 15px;
+}
+.custom-imgs li img {
+    width: 100%;
+}
+
+
+/* MAIN */
+/* Deploy section */
+.deploy {
+    padding: 50px 0 40px 0;
+}
+main p, 
+main .list-process {
+    font-size: 21px;
+}
+.small-wrapper {
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+}
+.deploy .list-process {
+    line-height: 2.4;
+    border-left: 2px solid #ccc;;
+    padding-left: 20px;
+}
+/* Boxes */
+.process-box {
+    padding-bottom: 15px;
+}
+.process-text {
+    text-align: left;
+}
+.process-text p {
+    font-size: 15px;
+}
+
+/* Design section */
