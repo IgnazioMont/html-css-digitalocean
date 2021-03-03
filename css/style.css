@@ -23,18 +23,38 @@ h2 {
 h3 {
     font-weight: 600;
 }
-/* Media query rules for mobile*/
-@media all and (max-width: 767px) {
-    .custom-imgs li {
-        width: calc(100% / 2 - 20px);
-    }
-    .custom-imgs li img {
-        max-width: 190px;
-        min-width: 70px;
-    }
-    .deploy .list-process {
-        margin-bottom: 40px;
-    }
+.small-wrapper {
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+}
+.xs-wrapper {
+    padding-top: 50px;
+    width: 70%;
+    margin: auto;
+}
+.deploy,
+.designed {
+    padding: 50px 0 40px 0;
+}
+/* Blue dots */
+.blue-dots {
+    padding: 0;
+    margin: 0;
+}
+.blue-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #2e85ff;
+    background-color: #2e85ff;
+    display: inline-block;
+}
+.blue-dots li a {
+    margin-right: 10px;
+}
+.blue-dots .empty-dot {
+    background-color: white;
 }
 
 
@@ -153,21 +173,26 @@ header .bg-lightgray {
 .custom-imgs li img {
     width: 100%;
 }
+/* Media query rules for mobile*/
+@media all and (max-width: 767px) {
+    .custom-imgs li {
+        width: calc(100% / 2 - 20px);
+    }
+    .custom-imgs li img {
+        max-width: 190px;
+        min-width: 70px;
+    }
+    .deploy .list-process {
+        margin-bottom: 40px;
+    }
+}
 
 
 /* MAIN */
 /* Deploy section */
-.deploy {
-    padding: 50px 0 40px 0;
-}
 main p, 
 main .list-process {
     font-size: 21px;
-}
-.small-wrapper {
-    padding-top: 50px;
-    width: 90%;
-    margin: auto;
 }
 .deploy .list-process {
     line-height: 2.4;
@@ -185,4 +210,49 @@ main .list-process {
     font-size: 15px;
 }
 
-/* Design section */
+/* Designed section */
+.designed .gray-text {
+    padding: 20px 0;
+}
+.xs-wrapper {
+    position: relative;
+}
+.slide {
+    padding: 0 50px;
+}
+.xs-wrapper a .fas {
+    font-size: 40px;
+}
+.xs-wrapper a .fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #6f7b97;
+}
+.xs-wrapper a .fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #011d4c;
+}
+.xs-wrapper p {
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 15px 0;
+    margin: 0;
+}
+@media all and (max-width: 767px) {
+    .xs-wrapper {
+        padding: 0;
+    }
+    .xs-wrapper a {
+        display: none;
+    }
+    .slide {
+        padding: 0;
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
+/* Features section */
