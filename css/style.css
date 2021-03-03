@@ -1,3 +1,48 @@
+/* COMMON */
 body {
     font-family: 'Inter', sans-serif;
 }
+
+
+/* HEADER */
+/* Nav */
+.wrapper {
+    padding: 13px 0;
+}
+.wrapper img {
+    min-width: 150px;
+}
+/* Lists */
+.wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+.wrapper li {
+    padding: 0;
+}
+.wrapper a {
+    margin-left: 8px;
+    font-size: 12px;
+    color: black;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+.menu.text-center {
+    line-height: 27px;
+}
+/* Button */
+.menu button {
+    color: #2e85ff;
+    border-color: #2e85ff;
+    font-size: 12px;
+    margin-left: 3px;
+}
+/* Burger */
+.burger .fas{
+    font-size: 30px;
+    padding: 0 10px;
+    color: #2e85ff;
+}
+
+/* Jumbotron */
