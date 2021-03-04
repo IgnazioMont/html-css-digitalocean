@@ -367,20 +367,34 @@ main .list-process,
     color: #6f7b97;
 }
 
-/* FIXED msg */
+/* BANNER msg fixed */
 .banner_msg {
     position: fixed;
     right: 0;
     bottom: 0;
     padding: 20px;
 }
+/* Box help area */
+.banner_msg textarea {
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 80%;
+    min-height: 80%;
+    max-width: 300px;
+    max-height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* Shark notification */
+.notification img {
+    padding: 5px 0;
+}
 .notification {
     background-color: #2e85ff;
     position: relative;
     display: inline-block;
     border-radius: 10px;
     width: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .notification:hover {
     opacity: 0.4;
