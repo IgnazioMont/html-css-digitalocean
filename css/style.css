@@ -36,7 +36,9 @@ h3 {
 .deploy,
 .designed,
 .features,
-.regions {
+.regions,
+.feedback,
+.g_started {
     padding: 50px 0 40px 0;
 }
 /* Blue dots */
@@ -57,6 +59,12 @@ h3 {
 }
 .blue-dots .empty-dot {
     background-color: white;
+}
+.regions,
+.g_started {
+    background: rgb(0,30,153);
+    background: linear-gradient(0deg, rgba(0,30,153,1) 0%, rgba(0,72,198,1) 100%);
+    color: white;
 }
 
 
@@ -193,7 +201,8 @@ header .bg-lightgray {
 /* MAIN */
 /* Deploy section */
 main p, 
-main .list-process {
+main .list-process,
+.feedback .white-container > p {
     font-size: 21px;
 }
 .deploy .list-process {
@@ -273,11 +282,6 @@ main .list-process {
 }
 
 /* 12 regions section */
-.regions {
-    background: rgb(0,30,153);
-    background: linear-gradient(0deg, rgba(0,30,153,1) 0%, rgba(0,72,198,1) 100%);
-    color: white;
-}
 .regions h2 {
     margin-bottom: 25px;
 }
@@ -304,6 +308,51 @@ main .list-process {
 }
 
 /* Feedback (slide) section */
+.feedback .white-container {
+    padding: 60px 10px;
+    margin-bottom: 30px;
+}
 .feedback .white-container img {
     margin: auto;
+}
+.feedback .white-container a {
+    display: inline-block;
+    padding-top: 30px;
+}
+.feedback .nameCTO p {
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.feedback #name {
+    font-weight: bolder;
+}
+@media all and (max-width: 767px) {
+    .feedback h2 {
+        margin-bottom: 40px;
+    }
+}
+
+/* Get started section */
+.g_started button {
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #2e85ff;
+}
+
+/* FOOTER */
+.foot_info {
+    background-color: #031c4e;
+    color: #a6adbd;
+}
+.cols_info {
+    padding: 60px 0;
+}
+.cols_info h3 {
+    margin: 0;
+}
+.cols_info ul li {
+    display: inline-block;
 }
