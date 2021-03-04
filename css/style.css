@@ -345,14 +345,26 @@ main .list-process,
 /* FOOTER */
 .foot_info {
     background-color: #031c4e;
-    color: #a6adbd;
 }
 .cols_info {
-    padding: 60px 0;
+    padding: 80px 0;
 }
-.cols_info h3 {
-    margin: 0;
+.cols_info .copyright {
+    margin-top: 20px;
+    line-height: 0.8;
 }
-.cols_info ul li {
-    display: inline-block;
+.cols_info ul {
+    padding: 0;
+    line-height: 2;
 }
+.cols_info .list_info li:first-child {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.social a {
+    font-size: 20px;
+    color: #6f7b97;
+}
+
+/* FIXED msg */
