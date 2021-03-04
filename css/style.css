@@ -34,7 +34,8 @@ h3 {
     margin: auto;
 }
 .deploy,
-.designed {
+.designed,
+.features {
     padding: 50px 0 40px 0;
 }
 /* Blue dots */
@@ -196,7 +197,7 @@ main .list-process {
 }
 .deploy .list-process {
     line-height: 2.4;
-    border-left: 2px solid #ccc;;
+    border-left: 2px solid #ccc;
     padding-left: 20px;
 }
 /* Boxes */
@@ -241,6 +242,7 @@ main .list-process {
     padding: 15px 0;
     margin: 0;
 }
+/* Media query rules for mobile*/
 @media all and (max-width: 767px) {
     .xs-wrapper {
         padding: 0;
@@ -256,3 +258,15 @@ main .list-process {
 }
 
 /* Features section */
+.features h2 {
+    margin-bottom: 50px;
+}
+.features .process-box {
+    padding-bottom: 30px;
+}
+@media all and (max-width: 767px) {
+    .features .process-box {
+        width: 90%;
+        margin: auto;
+    }
+}
