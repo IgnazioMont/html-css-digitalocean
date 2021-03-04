@@ -35,7 +35,8 @@ h3 {
 }
 .deploy,
 .designed,
-.features {
+.features,
+.regions {
     padding: 50px 0 40px 0;
 }
 /* Blue dots */
@@ -211,7 +212,7 @@ main .list-process {
     font-size: 15px;
 }
 
-/* Designed section */
+/* Designed (slide) section */
 .designed .gray-text {
     padding: 20px 0;
 }
@@ -269,4 +270,40 @@ main .list-process {
         width: 90%;
         margin: auto;
     }
+}
+
+/* 12 regions section */
+.regions {
+    background: rgb(0,30,153);
+    background: linear-gradient(0deg, rgba(0,30,153,1) 0%, rgba(0,72,198,1) 100%);
+    color: white;
+}
+.regions h2 {
+    margin-bottom: 25px;
+}
+/* Addresses list */
+.regions ul {
+    padding: 0;
+}
+.regions ul li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+.regions ul li a {
+    color: #00d5d1;
+    text-align: right;
+    display: block;
+}
+.regions ul li:last-child {
+    border-bottom: none;
+}
+.regions .city {
+    text-align: left;
+    display: block;
+    color: #b9ccff;
+}
+
+/* Feedback (slide) section */
+.feedback .white-container img {
+    margin: auto;
 }
