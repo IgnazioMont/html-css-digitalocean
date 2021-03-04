@@ -368,3 +368,30 @@ main .list-process,
 }
 
 /* FIXED msg */
+.banner_msg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+/* Shark notification */
+.notification {
+    background-color: #2e85ff;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    width: 70px;
+}
+.notification:hover {
+    opacity: 0.4;
+}
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 3px 5px;
+    border-radius: 50%;
+    border: 3px solid;
+    background: red;
+    color: white;
+}
